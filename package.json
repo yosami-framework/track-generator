@@ -1,13 +1,14 @@
 {
   "name": "track-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
   "repository": "alfa-jpn/track-generator.git",
   "scripts": {
     "linter": "eslint ./",
     "plop": "./node_modules/.bin/plop",
-    "clean": "rm -r ./tmp/"
+    "test": "npm run clean && npm run plop application test",
+    "clean": "rm -rf ./tmp/"
   },
   "author": "alfa-jpn",
   "license": "ISC",
