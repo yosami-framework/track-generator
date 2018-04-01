@@ -1,0 +1,16 @@
+const m = require('mithril');
+
+/**
+ * View of {{className name}}Controller
+ * @param {ApplicationController} controller Controller instance.
+ * @param {object}                pipe       Pipe between views.
+ * @param {object}                _yield     Rendering result upper view.
+ * @return {object} Rendering result.
+ */
+module.exports = function(component, pipe, _yield) {
+  return (
+<div class='controllers/{{name}}'>
+  Show `app/views/controllers/{{fileName name}}`
+</div>
+  );
+};
