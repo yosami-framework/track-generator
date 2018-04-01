@@ -1,0 +1,6 @@
+#!/bin/bash
+npm run plop application test &&
+npm run plop component piyopiyo &&
+npm run plop component hoges/fuga &&
+npm run plop controller piyopiyo &&
+npm run plop controller hoges/fuga

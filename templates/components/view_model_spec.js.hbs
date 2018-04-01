@@ -1,0 +1,13 @@
+require('./{{topDir name}}../../spec_helper');
+const t         = require('track-spec');
+const ViewModel = require('./{{topDir name}}../../../app/view_models/components/{{name}}');
+
+t.describe('{{classFullName name}}', () => {
+  let vm = null;
+
+  t.before(() => {
+    vm = new ViewModel();
+  });
+
+  console.warn('[PENDING] Please write {{classFullName name}} test in `tests/view_models/components/{{name}}`');
+});

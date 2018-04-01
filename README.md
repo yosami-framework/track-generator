@@ -18,3 +18,15 @@ $ npm install track-generator
 ```javascript
 $ npm run plop application
 ```
+
+### Component generator
+
+```javascript
+$ npm run plop component
+```
+
+### Controller generator
+
+```javascript
+$ npm run plop controller
+```

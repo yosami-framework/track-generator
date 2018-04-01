@@ -1,0 +1,21 @@
+require('./{{topDir name}}../spec_helper');
+const t         = require('track-spec');
+const Component = require('./{{topDir name}}../../app/components/{{name}}_component');
+
+t.describe('{{classFullName name}}Component', () => {
+  let vnode      = null;
+  let component = null;
+
+  t.before(() => {
+    vnode = {state: {}, attrs: {}};
+    component = new Component(vnode);
+  });
+
+  t.describe('#view', () => {
+    const subject = (() => component.view());
+
+    t.it('Render view', () => {
+      t.expect(subject().tag).equals('div');
+    });
+  });
+});
