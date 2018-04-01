@@ -1,0 +1,13 @@
+{
+  "name": "{{appName}}",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack -p",
+    "dev": "webpack-dev-server --hot --mode development",
+    "generate": "./node_modules/.bin/plop",
+    "prod": "./node_modules/.bin/babel-node ./bin/server.js",
+    "start": "npm run build && npm run server-prod",
+    "test": "ospec && ./node_modules/.bin/babel-node ./bin/server.js test"
+  },
+  "license": "ISC"
+}

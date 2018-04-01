@@ -1,0 +1,21 @@
+{
+  "name": "track-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "repository": "alfa-jpn/track-generator.git",
+  "scripts": {
+    "linter": "eslint ./",
+    "plop": "./node_modules/.bin/plop",
+    "clean": "rm -r ./tmp/"
+  },
+  "author": "alfa-jpn",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "plop": "^2.0.0"
+  }
+}

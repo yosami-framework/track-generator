@@ -1,0 +1,23 @@
+<html lang="ja">
+  <head>
+  </head>
+  <body>
+    <div id='app'>Loading application...</div>
+    <script>
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/assets/manifest.json');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          var assets = JSON.parse(xhr.responseText);
+
+          ['app.js', 'app.css.js'].forEach(function(name) {
+            var script = document.createElement('script');
+            script.setAttribute('src', assets[name]);
+            document.body.appendChild(script);
+          });
+        }
+      }
+      xhr.send();
+    </script>
+  </body>
+</html>
