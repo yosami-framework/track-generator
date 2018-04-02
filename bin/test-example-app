@@ -1,0 +1,2 @@
+#!/bin/bash
+cd tmp && npm run test && npm run generate component kemono/friends/serval && npm run build && npm run test-server

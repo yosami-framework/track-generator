@@ -1,20 +1,22 @@
 {
   "name": "track-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generator for track app.",
   "main": "lib/index.js",
   "repository": "yosami-framework/track-generator.git",
   "scripts": {
     "linter": "npm run clean && eslint ./",
     "plop": "./node_modules/.bin/plop",
-    "test": "npm run clean && bin/test",
+    "test": "npm run clean && bin/generate-example-app && ospec && bin/test-example-app",
     "clean": "rm -rf ./tmp/"
   },
   "author": "alfa-jpn",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.17.0",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "mithril": "^1.1.6",
+    "track-spec": "0.0.4"
   },
   "dependencies": {
     "plop": "^2.0.0"
