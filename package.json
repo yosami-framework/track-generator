@@ -1,6 +1,6 @@
 {
   "name": "track-generator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Generator for track app.",
   "main": "lib/index.js",
   "repository": "yosami-framework/track-generator.git",
