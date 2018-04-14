@@ -1,4 +1,5 @@
-const m = require('mithril');
+const m           = require('mithril');
+const TrackConfig = require('track-config');
 
 /**
  * Application top html.
@@ -24,7 +25,7 @@ module.exports = function(controller, pipe, _yield) {
     <div id='app'>
       {_yield}
     </div>
-    <script src='/assets/boot.js' />
+    <script src={`${TrackConfig.relativeUrlRoot || ''}/assets/boot.js`} />
   </body>
 </html>
   );
