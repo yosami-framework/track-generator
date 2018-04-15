@@ -14,7 +14,7 @@ t.describe('.babelrc', () => {
     t.it('Generated', () => {
       const content = loadFile();
       t.expect(content.indexOf('["transform-react-jsx", {')).notEquals(-1);
-      t.expect(content.indexOf('"pragma": "m"')).notEquals(-1);
+      t.expect(content.indexOf('"pragma": "$"')).notEquals(-1);
     });
   });
 });

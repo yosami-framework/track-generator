@@ -1,13 +1,12 @@
-const m = require('mithril');
-
 /**
  * View of {{className name}}Component
+ * @param {function}             $         Element creator.
  * @param {ApplicationComponent} component Component instance.
  * @param {object}               pipe      Pipe between views.
  * @param {object}               _yield    Rendering result upper view.
  * @return {object} Rendering result.
  */
-module.exports = function(component, pipe, _yield) {
+module.exports = function($, component, pipe, _yield) {
   return (
 <div class='components/{{name}}'>
   Show `app/views/controllers/{{fileName name}}`

@@ -1,14 +1,14 @@
-const m           = require('mithril');
 const TrackConfig = require('track-config');
 
 /**
  * Application top html.
+ * @param {function}              $          Element creator.
  * @param {ApplicationController} controller Controller instance.
  * @param {object}                pipe       Pipe between views.
  * @param {object}                _yield     Rendering result upper view.
  * @return {object} Rendering result.
  */
-module.exports = function(controller, pipe, _yield) {
+module.exports = function($, controller, pipe, _yield) {
   const title = pipe.title || 'Show `views/controllers/application.js`';
 
   if (process.browser) {
