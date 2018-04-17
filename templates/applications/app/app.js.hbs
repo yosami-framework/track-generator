@@ -19,7 +19,7 @@ const boot = (() => {
 
 const lang = TrackConfig.localeSelector(global.location.href);
 if (lang) {
-  m.request(TrackConfig.localeLoader(lang)).then((locale) => {
+  m.request(`${TrackConfig.relativeUrlRoot || ''}TrackConfig.localeLoader(lang)`).then((locale) => {
     TrackI18n.load(locale);
     boot();
   });
