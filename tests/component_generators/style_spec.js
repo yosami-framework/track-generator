@@ -6,6 +6,19 @@ t.describe('Components::Style', () => {
   const loadFile = (() => fs.readFileSync(file));
   let file = null;
 
+  t.describe('app.scss', () => {
+    t.beforeEach(() => {
+      file = path.resolve(__dirname, '../', '../', 'tmp', 'app', 'assets', 'styles', 'app.scss');
+    });
+
+    t.it('Insert @import', () => {
+      const content = loadFile();
+      t.expect(content.indexOf('@import "app/assets/styles/components/piyopiyo.scss";')).notEquals(-1);
+      t.expect(content.indexOf('@import "app/assets/styles/components/hoges/fuga.scss";')).notEquals(-1);
+      t.expect(content.indexOf('@import "app/assets/styles/components/hoges/fugas/foo.scss";')).notEquals(-1);
+    });
+  });
+
   t.describe('piyopiyo', () => {
     t.beforeEach(() => {
       file = path.resolve(__dirname, '../', '../', 'tmp', 'app', 'assets', 'styles', 'components', 'piyopiyo.scss');

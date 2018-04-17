@@ -2,7 +2,7 @@ const t    = require('track-spec');
 const fs   = require('fs');
 const path = require('path');
 
-t.describe('Controllers::Compoennt', () => {
+t.describe('Controllers::Controller', () => {
   const loadFile = (() => fs.readFileSync(file));
   let file = null;
 
