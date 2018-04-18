@@ -5,7 +5,7 @@
     <div id='app'>Loading application...</div>
     <script>
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', '/assets/manifest.json');
+      xhr.open('GET', '/manifest.json');
       xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
           var assets = JSON.parse(xhr.responseText);
