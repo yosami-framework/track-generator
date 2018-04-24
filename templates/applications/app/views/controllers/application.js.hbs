@@ -25,7 +25,7 @@ module.exports = function($, controller, pipe, _yield) {
     <div id='app'>
       {_yield}
     </div>
-    <script src={`${TrackConfig.relativeUrlRoot || ''}/assets/boot.js`} />
+    <script>{require('track-helpers/lib/application_helper').bootScript}</script>
   </body>
 </html>
   );
