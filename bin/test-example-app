@@ -1,2 +1,2 @@
 #!/bin/bash
-cd tmp && npm run test && npm run build && npm run test-server
+./node_modules/.bin/eslint ./tmp && cd tmp && npm run test && npm run build && npm run test-server

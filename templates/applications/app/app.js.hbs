@@ -14,7 +14,7 @@ const boot = (() => {
   TrackEventManager.initialize();
 
   m.route.prefix(TrackConfig.relativeUrlRoot || '');
-  m.route(mountElement, '/', TrackRouter.mithrilRoutes)
+  m.route(mountElement, '/', TrackRouter.mithrilRoutes);
 });
 
 const lang = TrackConfig.localeSelector(global.location.href);
