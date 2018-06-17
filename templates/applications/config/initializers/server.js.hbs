@@ -1,6 +1,9 @@
 const browserMock = require('mithril/test-utils/browserMock');
 const Config      = require('track-server-renderer/lib/config');
+const dotenv      = require('dotenv');
 const LRUCache    = require('track-server-cache-lru-cache');
+
+dotenv.config();
 
 Config.configure((c) => {
   c.browserMock = browserMock;
